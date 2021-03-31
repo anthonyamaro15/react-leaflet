@@ -1,3 +1,4 @@
+import ControlPanel from "../mapview/controlPanel";
 import MapView from "../mapview/mapview";
 import RenderLayerData from "./RenderLayerData";
 
@@ -6,6 +7,7 @@ const MainApp = () => {
       <div>
          <MapView />
          <RenderLayerData />
+         <ControlPanel />
       </div>
    );
 };
