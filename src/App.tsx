@@ -1,13 +1,11 @@
-import { useEffect, useRef } from "react";
-import mapController from "./controllers/MapController";
+import MainApp from "./components/MainApp";
 
 function App() {
-   const mapDiv = useRef(null);
-
-   useEffect(() => {
-      mapController.initializeMap(mapDiv);
-   }, []);
-   return <div id="map" style={{ height: "100vh" }} ref={mapDiv}></div>;
+   return (
+      <div className="main-container" style={{ height: "50vh" }}>
+         <MainApp />
+      </div>
+   );
 }
 
 export default App;
